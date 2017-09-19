@@ -1,0 +1,7 @@
+*.o
+simulation/simulate
+simulation/simulate_partial
+*.gch
+*.txt
+*.bin
+*.pyc
