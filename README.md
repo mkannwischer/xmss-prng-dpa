@@ -1,5 +1,7 @@
-# Differential Power Analysis Attack on a Pseudo-Random Number Generator
-We propose and implement a DPA on a SHA2-based PRNG which is similar to the one proposed for W-OTS+ secret key generation within XMSS (https://datatracker.ietf.org/doc/draft-irtf-cfrg-xmss-hash-based-signatures/).
+# DPA on a SHA256 PRNG
+We propose and implement a DPA on a SHA256 PRNG which is similar to the one proposed for W-OTS+ secret key generation within XMSS (https://datatracker.ietf.org/doc/draft-irtf-cfrg-xmss-hash-based-signatures/).
+
+A detailed description is available in my master thesis, which will be published shortly.
 
 ## License
 Code delivered in this package by Matthias Julius Kannwischer is published under BSD (2-clause) license. Actual information about the specific license is to be found in each source code file.
