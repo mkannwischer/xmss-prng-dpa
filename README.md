@@ -13,17 +13,17 @@ Code delivered in this package by Matthias Julius Kannwischer is published under
 
 ## Quick Start
  - `cd simulation && make && cd ..`
- - 8-bit DPA
+ - 8-bit DPA attack
     - `./simulation/simulate 100 HW_BYTE ca79af4090c3ca6defec33d631704e018b8ca869c5e2ed26f0b65cf8bbdb5c86`
     - `./analysis/analyze_8bit.py leakage_100.bin secret_data.txt`
- - 32-bit DPA on AND
+ - 32-bit DPA attack on AND
     - `./simulation/simulate 2000 HW ca79af4090c3ca6defec33d631704e018b8ca869c5e2ed26f0b65cf8bbdb5c86`
     - `./analysis/analyze_32bit_and.py leakage_2000.bin secret_data.txt 0.5`
- - 32-bit DPA on addition
+ - 32-bit DPA attack on addition
     - `./simulation/simulate 1000 HW ca79af4090c3ca6defec33d631704e018b8ca869c5e2ed26f0b65cf8bbdb5c86`
     - `./analysis/analyze_32bit_addition.py leakage_1000.bin secret_data.txt 0.5`
  - Note: Success of attack depends upon seed. With the seeds above the attacks succeed. If you use different ones you may need more traces.
-## Simulating Power traces
+## Simulating Power Traces
 - `make` in [`simulation/`](simulation/) builds the project
 - The power simulation can be used by running `./simulation/simulate n t [k]`, e.g. `./simulation/simulate 1000 HW`
 - The parameters are
@@ -39,7 +39,7 @@ Code delivered in this package by Matthias Julius Kannwischer is published under
   - `secret_data.txt` containing the seed and iv information - required for validating recovered keys later
 - Additionally, for development and debugging purposes we implemented [`partial_leak_prng.c`](simulation/partial_leak_prng.c) which only leaks the relevant operations
 
-## Running the DPA
+## Running the DPA Attack
  - We implemented three DPA attack scripts
  - [analyze_8bit.py](analysis/analyze_8bit.py) implements the DPA in the 8-bit HW leakage model.
     - It can be used by running `./analysis/analyze_8bit.py traceFile secretDataFile`
