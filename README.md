@@ -22,7 +22,7 @@ Code delivered in this package by Matthias Julius Kannwischer is published under
     - `./analysis/analyze_32bit_addition.py leakage_1000.bin secret_data.txt 0.5`
  - Note: Success of attack depends upon seed. With the seeds above the attacks succeed. If you use different ones you may need more traces.
 ## Simulating Power traces
-- `make` in [`simulation/`]('simulation/') builds the project
+- `make` in [`simulation/`](simulation/) builds the project
 - The power simulation can be used by running `./simulation/simulate n t [k]`, e.g. `./simulation/simulate 1000 HW`
 - The parameters are
   - `n` : number of traces, PRNG will be executed for indices: 0 <= i < n
@@ -65,7 +65,7 @@ Code delivered in this package by Matthias Julius Kannwischer is published under
 - [`experiment_2.sh`](other_experiments/experiment_2.sh) and [`experiment_6.sh`](other_experiments/experiment_6.sh) were just for sanity checking and don't produce valuable results. Therefore, they are left undocumented. Additionally, mysteriously `experiment_4.sh` is missing
 
 ## Reproducing Plots
-- [plots/exp_1_3_5.py](plots/exp_1_3_5.py) can be used to reproduce Figure 5.6, Figure 5.8, Figure 5.9
+- [plots/exp1_3_5.py](plots/exp1_3_5.py) can be used to reproduce Figure 5.6, Figure 5.8, Figure 5.9
 - [plots/corr_over_time.py](plots/corr_over_time.py) can be used to reproduce Figure 5.4 and Figure 5.5
 - [plots/corr_plot_trace.py](plots/plot_trace.py) can be used to reproduce Figure 5.3 ()
 - [plots/partial_corr.py](plots/partial_corr.py) can be used to reproduce Figure 5.7 (see Experiment 7)
@@ -76,4 +76,4 @@ Code delivered in this package by Matthias Julius Kannwischer is published under
 - Feel free to use, modify, and redistribute the code (according to the license)
 - `data/` is used to hold the experiment results
 - `plots/` contains the script to reproduce the thesis plots
-- See [simulation/README.md](simulation/README.md) [analysis/README.md](analysis/README.md) for details of the 2 modules
+- See [simulation/README.md](simulation/README.md) and [analysis/README.md](analysis/README.md) for details of the two modules
