@@ -35,7 +35,7 @@ Code delivered in this package by Matthias Julius Kannwischer is published under
     - `HW`: leaking the Hamming weight of the result of each 32-bit operation
     - `HW_BYTE` : leaking the Hamming weight of each byte of the result separately (i.e. 4 data points per operation)
 - The simulation produces two files
-  - `leakage_<n>.bin` containing the power `n` simulation traces in 8 bit unsigned char binary format
+  - `leakage_<n>.bin` containing the `n` power simulation traces in 8 bit unsigned char binary format
   - `secret_data.txt` containing the seed and iv information - required for validating recovered keys later
 - Additionally, for development and debugging purposes we implemented [`partial_leak_prng.c`](simulation/partial_leak_prng.c) which only leaks the relevant operations
 
