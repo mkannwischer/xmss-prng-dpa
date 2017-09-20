@@ -72,7 +72,7 @@ Code delivered in this package by Matthias Julius Kannwischer is published under
 - [plots/corr_plot_trace.py](plots/plot_trace.py) can be used to reproduce Figure 5.3 ()
 - [plots/partial_corr.py](plots/partial_corr.py) can be used to reproduce Figure 5.7 (see Experiment 7)
 - For requirements see these files
-- [plots/exp_1_3_5.py](plots/exp_2_6.py) can be used for the undocumented experiments that never made it into the thesis.
+- [plots/exp_2_6.py](plots/exp_2_6.py) can be used for the undocumented experiments that never made it into the thesis.
 
 ## Using the Code
 - Feel free to use, modify, and redistribute the code (according to the license)
